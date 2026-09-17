@@ -1,0 +1,358 @@
+{
+  "theme": "hybrid_dual_mode_default_light_high_contrast_slate",
+  "archetype": "ARCHETYPE 4: SWISS & HIGH-CONTRAST / TECHNICAL PRECISION (Enterprise Marketplace)",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "border": "#E2E8F0",
+          "accent_badge_bg": "#EEF2F6",
+          "accent_badge_text": "#1E293B"
+        }
+      },
+      {
+        "name": "page_dark",
+        "kind": "solid",
+        "bg": "#0B0F17",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "border": "#1E293B",
+          "accent_badge_bg": "#1E293B",
+          "accent_badge_text": "#F1F5F9"
+        }
+      },
+      {
+        "name": "nav_header",
+        "kind": "glass",
+        "contrast_against": "#FFFFFF",
+        "guarantee": "backdrop-blur-xl bg-white/90 border-b border-slate-200/80 dark:bg-slate-950/90 dark:border-slate-800/80",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "active_tab": "#0284C7",
+          "link_hover": "#0F172A"
+        }
+      },
+      {
+        "name": "card_surface",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "border": "#E2E8F0",
+          "border_hover": "#0284C7",
+          "tag_bg": "#F1F5F9",
+          "tag_text": "#334155"
+        }
+      },
+      {
+        "name": "card_surface_dark",
+        "kind": "solid",
+        "bg": "#111827",
+        "on_bg": "#F9FAFB",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "border": "#1F2937",
+          "border_hover": "#38BDF8",
+          "tag_bg": "#1F2937",
+          "tag_text": "#E5E7EB"
+        }
+      },
+      {
+        "name": "hero_search_surface",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "pill_bg": "#1E293B",
+          "pill_text": "#E2E8F0",
+          "pill_active_bg": "#0284C7",
+          "pill_active_text": "#FFFFFF"
+        }
+      },
+      {
+        "name": "status_badge_active",
+        "kind": "solid",
+        "bg": "#ECFDF5",
+        "on_bg": "#065F46",
+        "on_bg_muted": "#047857"
+      },
+      {
+        "name": "status_badge_maintenance",
+        "kind": "solid",
+        "bg": "#FFFBEB",
+        "on_bg": "#92400E",
+        "on_bg_muted": "#B45309"
+      },
+      {
+        "name": "status_badge_deprecated",
+        "kind": "solid",
+        "bg": "#FEF2F2",
+        "on_bg": "#991B1B",
+        "on_bg_muted": "#B91C1C"
+      },
+      {
+        "name": "modal_dialog",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "dialog_header": "#0F172A",
+          "dialog_border": "#E2E8F0"
+        }
+      }
+    ],
+    "accent": "#0284C7",
+    "on_accent": "#FFFFFF",
+    "accent_hover": "#0369A1",
+    "accent_secondary": "#2563EB",
+    "star_gold": "#EAB308"
+  },
+  "typography": {
+    "font_heading": "'Space Grotesk Variable', sans-serif",
+    "font_body": "'DM Sans Variable', sans-serif",
+    "font_mono": "'JetBrains Mono Variable', monospace",
+    "css_import": "@import '@fontsource-variable/space-grotesk';\n@import '@fontsource-variable/dm-sans';\n@import '@fontsource-variable/jetbrains-mono';",
+    "scale_px": {
+      "display": 48,
+      "h1": 36,
+      "h2": 28,
+      "h3": 20,
+      "h4": 18,
+      "body": 16,
+      "caption": 14
+    },
+    "letter_spacing": {
+      "headline": "tracking-tight",
+      "overline": "tracking-[0.18em] uppercase text-xs font-semibold",
+      "body": "tracking-normal"
+    }
+  },
+  "entry_surfaces": {
+    "/": "command hero with live omni-search input + category pill ribbons, followed by unified filter/sort/layout control toolbar and 5-mode enterprise app catalog container"
+  },
+  "layout_modes": {
+    "grid": {
+      "id": "grid",
+      "name": "Grid Marketplace",
+      "icon": "LayoutGrid",
+      "description": "Rich marketplace cards featuring application icon badge, status pill, name, category tag, description snippet, monthly usage metrics, favorite toggle, and primary Open / Launch action."
+    },
+    "list": {
+      "id": "list",
+      "name": "Compact List",
+      "icon": "List",
+      "description": "High-density horizontal rows optimized for power users, showing brand mark, name, category, environment badge, status, direct URL, copy link, and quick launch button."
+    },
+    "alphabetical": {
+      "id": "alphabetical",
+      "name": "Alphabetical A-Z",
+      "icon": "ArrowDownAZ",
+      "description": "Grouped alphabetical sections (A, B, C...) with a sticky A-Z jump bar for instant single-click section navigation across 40+ apps."
+    },
+    "category": {
+      "id": "category",
+      "name": "Category Grouped",
+      "icon": "Layers",
+      "description": "Grouped application cards organized under expandable category panels: Business, Infrastructure, Network, Security, Monitoring, Data Center, HR, Finance."
+    },
+    "compact": {
+      "id": "compact",
+      "name": "Compact Dense Grid",
+      "icon": "Grid3X3",
+      "description": "Ultra-dense app tiles with micro-icons and direct 1-click launch shortcuts for rapid keyboard & mouse browsing."
+    }
+  },
+  "categories": [
+    "All",
+    "Business",
+    "Infrastructure",
+    "Network",
+    "Security",
+    "Monitoring",
+    "Data Center",
+    "HR",
+    "Finance"
+  ],
+  "sort_options": [
+    {"id": "name_asc", "label": "Name (A → Z)"},
+    {"id": "name_desc", "label": "Name (Z → A)"},
+    {"id": "most_used", "label": "Most Used"},
+    {"id": "most_favorite", "label": "Most Favorited"},
+    {"id": "recently_added", "label": "Recently Added"},
+    {"id": "recently_updated", "label": "Recently Updated"}
+  ],
+  "environments": ["All", "Production", "Staging", "Internal", "Cloud", "On-Premises"],
+  "statuses": ["All", "Active", "Maintenance", "Deprecated"],
+  "seeded_apps_manifest": [
+    {"name": "CyberArk PAS", "category": "Security", "icon": "ShieldAlert", "description": "Privileged Access Security solution protecting enterprise credentials, session management, and credential vaulting.", "url": "https://cyberark.internal.corp", "status": "Active", "environment": "Production", "usage_count": 8940, "favorite_count": 420},
+    {"name": "Grafana Enterprise", "category": "Monitoring", "icon": "Activity", "description": "Operational observability platform providing unified telemetry dashboards, logs, and real-time alerting pipelines.", "url": "https://grafana.internal.corp", "status": "Active", "environment": "Production", "usage_count": 14200, "favorite_count": 910},
+    {"name": "Jira Software", "category": "Business", "icon": "CheckSquare", "description": "Issue tracking, agile sprint planning, and project workflow management for engineering and enterprise operations.", "url": "https://jira.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 23500, "favorite_count": 1450},
+    {"name": "Veeam Backup & Replication", "category": "Data Center", "icon": "HardDrive", "description": "Enterprise automated backup, disaster recovery, and data protection suite for virtual and physical workloads.", "url": "https://veeam.internal.corp", "status": "Active", "environment": "On-Premises", "usage_count": 4120, "favorite_count": 280},
+    {"name": "Tenable Nessus", "category": "Security", "icon": "Lock", "description": "Vulnerability scanning, continuous threat exposure assessment, and automated compliance auditing.", "url": "https://tenable.internal.corp", "status": "Active", "environment": "Production", "usage_count": 6300, "favorite_count": 310},
+    {"name": "Splunk Enterprise SIEM", "category": "Security", "icon": "Radio", "description": "Security information and event management aggregating terabytes of logs for real-time threat intelligence.", "url": "https://siem.internal.corp", "status": "Active", "environment": "Production", "usage_count": 18900, "favorite_count": 870},
+    {"name": "Workday HRIS", "category": "HR", "icon": "Users", "description": "Human capital management system for employee directory, benefits enrollment, PTO scheduling, and payroll.", "url": "https://workday.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 31000, "favorite_count": 1820},
+    {"name": "SAP S/4HANA ERP", "category": "Finance", "icon": "DollarSign", "description": "Central enterprise resource planning system managing ledgers, corporate purchasing, assets, and invoices.", "url": "https://erp.internal.corp", "status": "Active", "environment": "Production", "usage_count": 11400, "favorite_count": 640},
+    {"name": "VMware vCenter", "category": "Infrastructure", "icon": "Server", "description": "Centralized virtualization management platform controlling ESXi hypervisors, VM provisioning, and storage pools.", "url": "https://vcenter.internal.corp", "status": "Active", "environment": "On-Premises", "usage_count": 9850, "favorite_count": 530},
+    {"name": "Palo Alto Panorama", "category": "Network", "icon": "Network", "description": "Centralized next-generation firewall management, security policy distribution, and global network routing.", "url": "https://panorama.internal.corp", "status": "Active", "environment": "Production", "usage_count": 5200, "favorite_count": 290},
+    {"name": "Red Hat Ansible Tower", "category": "Infrastructure", "icon": "Cpu", "description": "Automation controller for executing playbook deployments, configuration management, and system patching.", "url": "https://ansible.internal.corp", "status": "Active", "environment": "Internal", "usage_count": 7600, "favorite_count": 480},
+    {"name": "Salesforce CRM", "category": "Business", "icon": "Briefcase", "description": "Customer relationship management engine tracking global pipeline, customer accounts, contracts, and revenue.", "url": "https://crm.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 16500, "favorite_count": 920},
+    {"name": "Datadog APM", "category": "Monitoring", "icon": "Gauge", "description": "Distributed tracing, synthetic monitoring, serverless metrics, and real-time application health metrics.", "url": "https://datadog.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 12800, "favorite_count": 760},
+    {"name": "Cisco DNA Center", "category": "Network", "icon": "Share2", "description": "Software-defined networking controller for switch fabrics, wireless access points, and zero-trust policies.", "url": "https://dnac.internal.corp", "status": "Active", "environment": "Production", "usage_count": 3400, "favorite_count": 190},
+    {"name": "HashiCorp Vault", "category": "Security", "icon": "Key", "description": "Dynamic secrets management, TLS certificate authority, encryption-as-a-service, and token brokering.", "url": "https://vault.internal.corp", "status": "Active", "environment": "Production", "usage_count": 15600, "favorite_count": 890},
+    {"name": "NetApp ONTAP SAN", "category": "Data Center", "icon": "Database", "description": "Enterprise unified hybrid storage management system for NFS/CIFS and iSCSI high-availability volumes.", "url": "https://ontap.internal.corp", "status": "Active", "environment": "Data Center", "usage_count": 2900, "favorite_count": 140},
+    {"name": "Confluence Wiki", "category": "Business", "icon": "BookOpen", "description": "Corporate knowledge base, engineering documentation, technical runbooks, and team workspaces.", "url": "https://confluence.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 21000, "favorite_count": 1150},
+    {"name": "Greenhouse Recruiting", "category": "HR", "icon": "UserPlus", "description": "Applicant tracking system, candidate pipeline coordinator, and structured interview feedback portal.", "url": "https://greenhouse.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 4700, "favorite_count": 230},
+    {"name": "Coupa Procurement", "category": "Finance", "icon": "CreditCard", "description": "Business spend management, purchase order approvals, supplier contracts, and corporate expense tracking.", "url": "https://coupa.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 8200, "favorite_count": 390},
+    {"name": "Prometheus & Alertmanager", "category": "Monitoring", "icon": "BellRing", "description": "Time-series dimensional metric scraping engine with customizable alerting rules for Kubernetes clusters.", "url": "https://prometheus.internal.corp", "status": "Active", "environment": "Production", "usage_count": 13900, "favorite_count": 680},
+    {"name": "F5 BIG-IP LTM", "category": "Network", "icon": "Workflow", "description": "Local traffic management, SSL offloading, global server load balancing, and application acceleration.", "url": "https://f5.internal.corp", "status": "Active", "environment": "Production", "usage_count": 4800, "favorite_count": 210},
+    {"name": "Kubernetes OpenShift", "category": "Infrastructure", "icon": "Box", "description": "Enterprise container orchestration platform managing microservices, ingress routes, and CI/CD pods.", "url": "https://openshift.internal.corp", "status": "Active", "environment": "Production", "usage_count": 17200, "favorite_count": 1040},
+    {"name": "CrowdStrike Falcon", "category": "Security", "icon": "Eye", "description": "Cloud-native endpoint detection and response (EDR) platform preventing malware and unauthorized processes.", "url": "https://falcon.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 9300, "favorite_count": 460},
+    {"name": "Nutanix Prism Central", "category": "Data Center", "icon": "Cpu", "description": "Hyperconverged infrastructure management console overseeing distributed storage fabric and compute clusters.", "url": "https://nutanix.internal.corp", "status": "Active", "environment": "On-Premises", "usage_count": 3100, "favorite_count": 170},
+    {"name": "Tableau Server", "category": "Business", "icon": "BarChart3", "description": "Enterprise executive reporting, business intelligence dashboards, and interactive visual data analytics.", "url": "https://tableau.internal.corp", "status": "Active", "environment": "Production", "usage_count": 14900, "favorite_count": 780},
+    {"name": "Culture Amp", "category": "HR", "icon": "Heart", "description": "Employee engagement surveys, 360-degree performance evaluations, and employee wellness analytics.", "url": "https://cultureamp.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 3800, "favorite_count": 190},
+    {"name": "Expensify Enterprise", "category": "Finance", "icon": "Receipt", "description": "Receipt scanning, corporate card reconciliation, employee expense reports, and automated reimbursement.", "url": "https://expensify.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 19400, "favorite_count": 1100},
+    {"name": "Dynatrace OneAgent", "category": "Monitoring", "icon": "LineChart", "description": "Full-stack AI-assisted application performance monitoring, automated root-cause analysis, and user telemetry.", "url": "https://dynatrace.internal.corp", "status": "Active", "environment": "Production", "usage_count": 6900, "favorite_count": 340},
+    {"name": "Infoblox DDI", "category": "Network", "icon": "Globe", "description": "Enterprise core network services managing authoritative DNS zones, DHCP scopes, and IP address management (IPAM).", "url": "https://infoblox.internal.corp", "status": "Active", "environment": "Production", "usage_count": 5500, "favorite_count": 270},
+    {"name": "Terraform Enterprise", "category": "Infrastructure", "icon": "FolderGit2", "description": "Infrastructure as Code collaborative platform managing cloud resource state files, policies, and drift detection.", "url": "https://terraform.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 12100, "favorite_count": 820},
+    {"name": "Okta Verify SSO", "category": "Security", "icon": "ShieldCheck", "description": "Identity and access management provider with adaptive multi-factor authentication and universal directory.", "url": "https://sso.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 42000, "favorite_count": 2400},
+    {"name": "Pure Storage FlashBlade", "category": "Data Center", "icon": "Zap", "description": "Unified fast-file and object storage management for AI workloads, analytics, and rapid backup restore.", "url": "https://purestorage.internal.corp", "status": "Maintenance", "environment": "Data Center", "usage_count": 2100, "favorite_count": 95},
+    {"name": "Asana Enterprise", "category": "Business", "icon": "Trello", "description": "Cross-functional project tracking, operational roadmaps, team task assignment, and portfolio timelines.", "url": "https://asana.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 11200, "favorite_count": 610},
+    {"name": "Lattice Goals & 1:1s", "category": "HR", "icon": "Target", "description": "People management platform for OKR tracking, continuous feedback loops, and 1-on-1 manager syncs.", "url": "https://lattice.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 5800, "favorite_count": 310},
+    {"name": "Anaplan Modeling", "category": "Finance", "icon": "PieChart", "description": "Connected financial planning, budgeting simulations, headcount capacity modeling, and forecast scenario analytics.", "url": "https://anaplan.internal.corp", "status": "Active", "environment": "Cloud", "usage_count": 4300, "favorite_count": 220},
+    {"name": "Zabbix Infrastructure", "category": "Monitoring", "icon": "Terminal", "description": "Agent-based network device and hardware sensor monitoring for distributed edge data centers.", "url": "https://zabbix.internal.corp", "status": "Deprecated", "environment": "Internal", "usage_count": 1400, "favorite_count": 40}
+  ],
+  "component_hierarchy": [
+    {
+      "name": "AppNavbar",
+      "path": "@/components/catalog/AppNavbar.tsx",
+      "description": "Fixed top navigation with corporate emblem, 'Enterprise Application Catalog' title, quick search trigger, layout selector pill group, favorites filter toggle, theme switcher (Light/Dark/System), and Admin 'Add Application' trigger."
+    },
+    {
+      "name": "HeroSearchSection",
+      "path": "@/components/catalog/HeroSearchSection.tsx",
+      "description": "High-impact dark obsidian command center hero with subtle technical grid texture, bold 'Find the application you need' heading, omni-search input with live keystroke filtering, and quick category pills with active indicators."
+    },
+    {
+      "name": "CatalogToolbar",
+      "path": "@/components/catalog/CatalogToolbar.tsx",
+      "description": "Unified control ribbon featuring live app count badge, category tabs, environment filter dropdown, status filter dropdown, multi-mode sort dropdown, layout switchers (Grid, List, A-Z, Category, Compact), and favorites-only toggle."
+    },
+    {
+      "name": "AppCardGrid",
+      "path": "@/components/catalog/AppCardGrid.tsx",
+      "description": "Mode 1: Marketplace-style rich cards with distinct brand icon container, status pill, category chip, star toggle, description, usage stats, and 'Open' action button."
+    },
+    {
+      "name": "AppCardList",
+      "path": "@/components/catalog/AppCardList.tsx",
+      "description": "Mode 2: Compact tabular rows designed for high scanability with quick URL copy, launch shortcut, and instant favorite starring."
+    },
+    {
+      "name": "AppCardAlphabetical",
+      "path": "@/components/catalog/AppCardAlphabetical.tsx",
+      "description": "Mode 3: Alphabetical sections (A-Z) with sticky horizontal alphabet jump bar and count indicators."
+    },
+    {
+      "name": "AppCardCategoryGroup",
+      "path": "@/components/catalog/AppCardCategoryGroup.tsx",
+      "description": "Mode 4: Categorized sections with collapsible category headers (Business, Security, Infrastructure, etc.) and category app counts."
+    },
+    {
+      "name": "AppCardCompact",
+      "path": "@/components/catalog/AppCardCompact.tsx",
+      "description": "Mode 5: Dense tile matrix for rapid scanning and one-click app launch."
+    },
+    {
+      "name": "AppDetailDialog",
+      "path": "@/components/catalog/AppDetailDialog.tsx",
+      "description": "Full application inspection modal opened on tile click. Displays complete purpose description, direct launch button (opens in new tab and increments usage), category, environment, status, usage stats, admin edit/delete controls, and related apps."
+    },
+    {
+      "name": "AdminAppFormDialog",
+      "path": "@/components/catalog/AdminAppFormDialog.tsx",
+      "description": "Modal dialog for adding and editing enterprise apps with validation (name, category, url, description, status, environment, icon selection)."
+    },
+    {
+      "name": "StatsSummaryBanner",
+      "path": "@/components/catalog/StatsSummaryBanner.tsx",
+      "description": "Enterprise metric chips: Total Apps, Active Services, Most Popular Application, and Total Monthly Launches."
+    }
+  ],
+  "motion": {
+    "card_hover": "hover:-translate-y-1 hover:shadow-lg transition-transform duration-200 ease-out",
+    "stagger_entrance": "motion/react with staggerChildren: 0.04, opacity: 0 to 1, y: 12 to 0",
+    "tab_transition": "layoutId animated pill indicator with spring stiffness: 350, damping: 28",
+    "reduced_motion": "Respects prefers-reduced-motion using conditional CSS animations and Tailwind motion-reduce:transform-none"
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG AA compliant contrast (minimum 4.5:1 text-to-background ratio on all normal text, 3:1 on large text)",
+    "keyboard_nav": "Full keyboard accessibility with visible focus rings (focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2)",
+    "aria_labels": "Every icon-only button (favorite toggle, layout switcher, launch action) has explicit aria-label",
+    "screen_readers": "Live search results region with aria-live='polite' announcing matching application counts",
+    "data_testids": "All interactive triggers and informational badges have kebab-case data-testid tags (e.g., data-testid='app-search-input', data-testid='layout-grid-btn', data-testid='app-card-cyberark-pas')"
+  },
+  "data_testid_manifest": [
+    "app-navbar",
+    "app-logo-link",
+    "app-title",
+    "global-search-input",
+    "hero-search-input",
+    "category-pill-all",
+    "category-pill-business",
+    "category-pill-infrastructure",
+    "category-pill-network",
+    "category-pill-security",
+    "category-pill-monitoring",
+    "category-pill-data-center",
+    "category-pill-hr",
+    "category-pill-finance",
+    "layout-selector-grid",
+    "layout-selector-list",
+    "layout-selector-alphabetical",
+    "layout-selector-category",
+    "layout-selector-compact",
+    "sort-selector-dropdown",
+    "filter-environment-dropdown",
+    "filter-status-dropdown",
+    "favorites-filter-toggle",
+    "theme-toggle-btn",
+    "admin-add-app-btn",
+    "app-card",
+    "app-card-open-btn",
+    "app-card-favorite-btn",
+    "app-detail-modal",
+    "app-detail-launch-btn",
+    "app-detail-edit-btn",
+    "app-detail-delete-btn",
+    "admin-app-form-submit-btn",
+    "alphabetical-jump-bar",
+    "app-count-badge"
+  ],
+  "instructions_to_main_agent": [
+    "1. The project uses the farm-ts template (FastAPI backend on port 8001 + React 19 Vite frontend on port 3000 with Tailwind v4).",
+    "2. Implement backend CRUD endpoints in /app/backend/routers/apps.py: GET /api/apps (with search/filter/sort params), POST /api/apps, GET /api/apps/{id}, PUT /api/apps/{id}, DELETE /api/apps/{id}, and POST /api/apps/{id}/launch (to increment usage count).",
+    "3. Seed the MongoDB database with the ~36 realistic enterprise applications in backend/seed.py using lib/db.py and ensure it runs cleanly via `python seed.py`.",
+    "4. Store user favorites and user preferences (selected layout mode, preferred sort, dark/light theme) in localStorage so they persist seamlessly across page reloads without requiring user login.",
+    "5. Provide all 5 layouts: Grid (marketplace), List (tabular rows), Alphabetical (A-Z with jump nav), Category (collapsible category sections), and Compact (high density grid). Layout switching must be instantaneous with zero page reload.",
+    "6. Build App Detail modal with comprehensive description, category, direct URL, environment badge, status, launch button (which opens in a new tab AND calls the launch counter endpoint), and admin edit/delete buttons.",
+    "7. Include an Admin Dialog to Add/Edit/Delete applications with instant UI feedback via Sonner toast notifications.",
+    "8. Ensure all clickable buttons and inputs have the specified `data-testid` attributes for Playwright verification.",
+    "9. Update /app/frontend/src/index.css to import '@fontsource-variable/space-grotesk' and '@fontsource-variable/dm-sans', and apply the refined Swiss/High-Contrast Enterprise palette tokens in :root and .dark."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "visual_depth": "Use crisp 1px borders (border-slate-200/80 dark:border-slate-800), subtle inner highlights, and layered box-shadows rather than flat muddy fills.",
+    "anti_slop": "Avoid generic centered cards with purple/pink neon glow. Use crisp tactical typography, distinct category color accents, and functional badge indicators.",
+    "transitions": "Never use transition: all. Use specific property transitions like `transition-[transform,opacity,background-color] duration-200`.",
+    "buttons": "Pill or clean 8px radius with clear hover and active depression states."
+  }
+}

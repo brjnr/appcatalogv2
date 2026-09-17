@@ -1,91 +1,86 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# AppCatalog — repository ignores
+# Rule of thumb: source and config are tracked; anything generated, machine-local,
+# or agent/runtime metadata is not.
 
-# IDE and editors
-.idea/
-.vscode/
-
-# Dependencies
+# --- Dependencies / build output ---
 node_modules/
-/node_modules
-/.pnp
 .pnp.js
-.yarn/install-state.gz
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-
-# Testing
-/coverage
-
-# Next.js
-/.next/
-/out/
-next-env.d.ts
-*.tsbuildinfo
-
-# Production builds
-/build
 dist/
-dist
+build/
+*.tsbuildinfo
+/coverage
+.cache/
 
-# Environment files (comprehensive coverage)
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 
-*token.json*
+# --- Secrets & environment ---
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+!**/.env.example
+*.pem
+*.key
+credentials.json
 *credentials.json*
+*token.json*
+.credentials
 
-# Logs and debug files
+# --- Runtime / user data (not product source) ---
+backend/uploads/
+dump.rdb
+
+# --- Generated test output & reports ---
+/test_reports/
+/test_result.md
+tests/test-results/
+tests/playwright-report/
+*.xml.orig
+
+# --- Agent / platform runtime metadata (kept on disk, never committed) ---
+/memory/
+**/.emergent/recordings/
+.ac
+.chainlit
+chainlit.md
+
+# --- Repository root is NOT a yarn workspace; the stub lockfile is pod-local ---
+/yarn.lock
+
+# --- Retired starter scaffolding (deleted 2026-06; never reintroduce) ---
+/backend-starter-backup/
+/frontend-starter-backup/
+/archive/
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+.DS_Store
+
+# --- Logs ---
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-dump.rdb
 
-# System files
-.DS_Store
-*.pem
-
-# Python
-__pycache__/
-*pyc*
-venv/
-.venv/
-
-# Development tools
-chainlit.md
-.chainlit
-.ipynb_checkpoints/
-.ac
-
-# Deployment
-.vercel
-
-# Data and databases
-agenthub/agents/youtube/db
-
-# Archive files and large assets
+# --- Archives & large binaries ---
 **/*.zip
-**/*.tar.gz
 **/*.tar
+**/*.tar.gz
 **/*.tgz
 *.pack
 *.deb
 *.dylib
-
-# Build caches
-.cache/
-
-memory/test_credentials.md
-
-# Mobile development
-android-sdk/
-
-# overlay black-box crash/user-report dumps — session data, never history
-**/.emergent/recordings/
-.env
-.env.*
-*.env
-credentials.json
-*.key
-.credentials
